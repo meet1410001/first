@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ITCapp',
+    'captcha',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -73,12 +75,8 @@ WSGI_APPLICATION = 'ITC.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql',
-        'NAME': 'ITCDB',
-        'HOST': 'AM-ITC-PC-57\SQLEXPRESS',
-        'OPTIONS': {
-            'DRIVER': 'ODBC DRIVER for SQL SERVERS',
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
