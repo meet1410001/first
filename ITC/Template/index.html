@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Home Page</h1>
+    <h1>Hello {{ current_username }}</h1>
+
+    <h2>All Registered Usernames:</h2>
+    <ul>
+        {% for username in all_usernames %}
+            <li>{{ username }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
