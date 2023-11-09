@@ -63,7 +63,9 @@
         p {
             margin: 10px 0;
         }
+
     </style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <div class="container">
@@ -75,6 +77,9 @@
             <br>
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
+            <br>
+            <!-- Add reCAPTCHA field -->
+            <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
             <br>
             <button type="submit" name="loginbtn">Login</button>
         </form>
